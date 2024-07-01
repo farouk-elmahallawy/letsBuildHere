@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    font-family: 'Euclid Circular A';
+    height: 100%;
+}
+
+.header{
+    display: none !important;
+    width: 100vw;
+    height: 60px;
+    background-color: #00684a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+/****************************************************************************************************/
+/*                                      MongoDBContainer                                             /
+/****************************************************************************************************/
+
+.MongoDBContainer{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+/****************************************************************************************************/
+/*                                          LOGIN DIV                                                /
+/****************************************************************************************************/
+
+.login{
+    width:345px;
+    margin:50px 0px 50px 42px;
+}
+
+.login h2{
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "MongoDB Value Serif", "Times New Roman", serif;
+    color: rgb(0, 104, 74);
+}
+
+.noAccount{
+    margin-bottom: 32px;
+    color: rgb(28, 45, 56);
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-align: start;
+}
+
+.noAccount a{
+    text-decoration: none;
+    color: rgb(1, 107, 248);
+}
+
+.google , .github{
+    width:296px;
+    cursor: pointer;
+    background-color: white;
+    box-sizing: border-box;
+    margin-top: 16px;
+    border-radius: 6px;
+    width: 296px;
+    height: 52px;
+    box-shadow: lightgray 0px 1px;
+    border: 1px solid rgb(136, 147, 151);
+}
+
+.google:hover , .github:hover{
+    box-shadow: rgb(232, 236, 235) 0px 0px 0px 3px;
+    border-color: rgb(136, 147, 151);
+}
+
+.google img , .github img{
+    mix-blend-mode: multiply;
+}
+
+.google div , .github div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Euclid Circular A", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:rgb(92, 108, 117);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.secondOption{
+    display: flex;
+    width: 300px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: normal;
+    color: rgb(92, 108, 117);
+    text-align: center;
+    -moz-box-align: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.secondOption::before{
+    content: "";
+    flex: 1 1 10%;
+    border-bottom: 1px solid rgb(193, 199, 198);
+    margin: 0px 10px;
+    transform: translateY(-50%);
+}
+
+.secondOption::after{
+    content: "";
+    flex: 1 1 10%;
+    border-bottom: 1px solid rgb(193, 199, 198);
+    margin: 0px 10px;
+    margin-right: 10px;
+    transform: translateY(-50%);
+}
+
+#userNameLabel{
+    display: flex;
+    flex-direction: column;
+}
+
+#username{
+    height: 36px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px ;
+    font-family: "Euclid Circular A", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 296px;
+  font-weight: normal;
+  z-index: 1;
+  outline: none;
+  border-radius: 6px;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: border-color, box-shadow;
+  color: rgb(0, 30, 43);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(136, 147, 151);
+  padding-left: 12px;
+}
+
+#username:hover{
+    box-shadow: rgb(232, 236, 235) 0px 0px 0px 3px;
+    border-color: rgb(136, 147, 151);
+}
+
+#username:focus{
+    box-shadow: rgb(4, 152, 236) 0px 0px 0px 3px;
+    border-color: rgb(255, 255, 255);
+}
+
+form button{
+    height: 32px;
+    width: 90px;
+    font-size: 15px;
+    margin-top: 48px;
+    margin-bottom: 0px;
+    color: rgb(136, 147, 151);
+    cursor: not-allowed;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    border-color: rgb(193, 199, 198);
+    background-color: rgb(232, 237, 235);
+}
+/****************************************************************************************************/
+/*                                          CONTENT DIV                                              /
+/****************************************************************************************************/
+
+.content{
+    width: calc(-385px + 100vw);
+    height: 100vh;
+    order: 2;
+    background-image: url("./images/login_promo_desktop_v20240327.svg");
+    background-position: center center;
+    background-size: cover;
+    -moz-box-pack: center;
+    display: block;
+    -moz-box-align: inherit;
+    align-items: inherit;
+    position: absolute;
+    left: 385px;
+}
+.content div{
+    padding: 60px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.content div h5{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.content div p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    width: 310px;
+    padding: 24px 0px 0px;
+}
+
+.content div a span{
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/**************************************************************************************************************/
+/*                                                   QUERY                                                    */
+/**************************************************************************************************************/
+@media (max-width:1024px){
+    .content{
+        background-image: url(./images/login_promo_query_tablet_v20240327.svg);
+    }
+    .content div{
+        background-color:rgba(0,71,102,0.6);
+    }
+
+}
+
+@media (max-width:767px){
+    .header{
+        display: flex !important;
+    }
+    .content{
+        display: none;
+    }
+
+    .login{
+        width: 100%;
+        margin: 50px 16px;
+    }
+    .google , .github , .secondOption , #username , form button{
+        width: 100%;
+    }
+    #username{
+        padding-left: 0px;
+    }
+}
